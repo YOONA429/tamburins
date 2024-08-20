@@ -1,0 +1,430 @@
+#wrap{
+    margin-top: 300px;
+}
+#wrap .fixed{
+    width: 100%;
+    position:fixed;
+    top: 0; left: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+#header{
+    border-bottom: 1px solid #000;
+}
+.headerin{
+    /* background-color: red; */
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: violet; */
+    padding-bottom: 100px;
+
+}
+.headerin .logo{
+    text-align: center;
+    padding-top: 60px;
+}
+.headerin .logo img{
+    width: 267px;}
+
+.util{
+    position: absolute;
+    top: 146px; right: 0;
+}
+.util li{
+    /* display: inline-block; */
+    float: left;
+    margin-left: 20px; 
+}
+.util li a{
+    background: url(../images/util_01.png) no-repeat center 0;
+    padding-top: 35px;
+    /* margin: 20px; */
+}
+.util li:nth-child(2) a{
+    background-image: url(../images/util_02.png);
+}
+.util li a:hover{
+    color: #5c886f;
+    font-weight: 400;
+}
+
+.blink-img{
+    position: absolute;
+    top: 60px; right: 97px; 
+    width: 55px; height: auto;
+    rotate: -20deg;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink{
+    0%, 100%{opacity: 1;}
+    50%{opacity: 0;}
+}
+.headerin .blink-imgTxt{
+    position: absolute;
+    top: 95px; right: 145px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.blink-gnb{
+    position: absolute;
+    top: 130px; left: 98px;
+    width: 55px; height: auto;
+    transform: scaleX(-1);
+    rotate: 20deg;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink{
+    0%, 100%{opacity: 1;}
+    50%{opacity: 0;}
+}
+.headerin .blink-gnbTxt{
+    position: absolute;
+    top: 160px; left: 145px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;}
+
+
+nav{ 
+    border-bottom: 1px solid #000;
+}
+.gnb{
+    width: 1020px;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 auto;
+}
+.gnb>li{
+    width: 204px;
+    float: left;
+    text-align: center;
+    line-height: 39px;
+    position: relative;
+}
+.gnb>li>a{}
+.gnb>li::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px;
+    background-color: #000;
+    /* display: block; */
+    /* position: absolute; */
+}
+.gnb>li:first-child::before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px;
+    background-color: #000;
+}
+
+.gnb>li:hover>a{
+    width: 204px;
+    height: 39px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+}
+
+.gnb>li .sub{
+    position: absolute;
+    top: 40px; left: 50%; transform: translateX(-50%);
+    width: 204px;
+    height: 0; overflow: hidden;
+    background-color: #5c886f;
+    transition: all 0.4s;
+    font-weight: 200;
+}
+
+.gnb>li .sub li{
+    line-height: 2.5em;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.gnb>li:hover .sub{
+    padding-top: 15px;
+    height: 170px
+    /* opacity: 1; */
+}
+.gnb>li .sub a:hover{
+    text-decoration: underline;
+}
+
+
+.mainVesual{
+    width: 1020px;
+    margin: 70px auto;
+    position: relative;
+    z-index: -1;
+}
+.mainVesual .arrows{
+    width: 1020px;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+}
+.mainVesual .arrows .left{
+    float: left;
+    position: absolute;
+    left: -175px;
+}
+.mainVesual .arrows .right{
+    float: right;
+    position: absolute;
+    right: -175px;
+}
+.mainVesual .MV_dots{
+    position: absolute;
+    left: 40px; bottom: 15px;
+}
+.mainVesual .MV_dots li{
+    float: left;
+    margin: 7px;
+}
+.mainVesual .MV_dots li a{
+    display: block;
+    width: 10px; height: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0;
+}
+.mainVesual .MV_dots li.active a{
+    width: 30px;
+    border-radius: 20px;
+    background: #5c886f;
+}
+.container{
+/*     width: 1020px;
+    margin: 0 auto; */
+}
+.cont1{
+    width: 1020px;
+    margin: 0 auto;
+}
+.cont1 .new{
+    margin: 90px 0 30px auto;
+    font-size: 50px;
+    font-weight: 100;
+}
+.cont1 .new span{
+    font-size: 25px;
+    font-weight: 500;
+}
+.cont1 .new_img1{
+    float: left;
+    position: relative;
+}
+.cont1 .new_img2{
+    float: right;
+}
+.cont1 .new_img2 img{
+    padding: 0 0 22px 22px;
+}
+.cont1 .new_img1 img:hover{
+    opacity: 0.8;
+}
+.cont1 .new_img2 img:hover{
+    opacity: 0.8;
+}
+.cont1 .new_img1 .new_img01_dots{
+    position: absolute;
+    left: 50%; bottom: 15px;
+    transform: translateX(-50%);
+}
+.cont1 .new_img1 .new_img01_dots li{
+    display: inline-block;
+    margin: 7px;
+}
+.cont1 .new_img1 .new_img01_dots li a{
+    display: block;
+    width: 10px; height: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0;
+}
+.cont1 .new_img1 .new_img01_dots li.active a{
+    width: 30px;
+    border-radius: 20px;
+    background: #5c886f;
+}
+.best{
+    width: 1020px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 90px 0 30px 0;
+    }
+.cont2_in{
+    background-color: #eee;
+    height: 500px;
+}
+.cont2{
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.left_img{
+    width: 467.25px;
+    height: 338.7px;
+    background: url(../images/cont2_img01.jpg) no-repeat center -190px / 467.25px auto;
+    border-radius: 30px;
+}
+.right_img{
+    width: 467.25px;
+    height: 338.7px;
+    background: url(../images/cont2_img02.jpg) no-repeat center -200px / 467.25px auto;
+    border-radius: 30px;
+}
+.left_img:hover{
+    opacity: 0.8;
+}
+.right_img:hover{
+    opacity: 0.8;
+}
+/* .cont2 img{
+    width: 467.25px;
+    height: 338.7px;
+    border-radius: 30px;
+} */
+.cont2 .cont2_left{
+    float: left;
+}
+.cont2 .cont2_right{
+    float: right;
+}
+.cont2 h4{
+    line-height: 1.5em;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.cont2 h4:hover{
+    color: #5c886f;
+}
+.cont2 p{
+    font-size: 14px;
+    margin-left: 20px;
+    line-height: 1.8em;
+}
+.Cont2Txt1{
+    background: url(../images/cont2_stic01.jpg) no-repeat;
+/*     background-color: tomato; */
+    margin-top: 10px;
+}
+.Cont2Txt2{
+    background: url(../images/cont2_stic02.jpg) no-repeat;
+/*     background-color: tomato; */
+    margin-top: 10px;
+}
+
+.Cont2Txt2 h4 span{
+    font-size: 14px;
+    position: relative;
+}
+
+.cont3{
+    width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 167px;
+}
+.cont3 .Prod{
+    margin: 90px 0 30px auto;
+    font-size: 50px;
+    font-weight: 100;
+}
+.Cont2Txt2 .right_imgTxt p span{
+    width: 60px; height: 18px;
+    background-color: #5c886f;
+    display: inline-block;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+.cont3 .Prod_img{}
+.cont3 .Prod_img a{
+    float: left;
+    margin-right: 20px;
+    transition: all 0.3;
+}
+.cont3 .Prod_img a:last-child{
+    margin-right: 0;
+}
+.cont3 .Prod_img a:hover{
+    opacity: 0.8;
+}
+#footer{
+    height: 234px;
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.footerin{
+    width: 1020px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+.ft_menu{
+    position: absolute;
+    margin: 25px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footerin .ft_menu li{
+    float: left;
+    text-align: center;
+    padding: 0 60px;
+}        /* 위아래부분 css 확인해달라고 하기 */
+.footerin .ft_menu a{
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 0 15px;
+    
+}
+.footerin .ft_menu li:hover{
+    color: #5c886f;
+}
+.footerin .ft_bottom{
+    position: absolute;
+    float: left;
+    margin: 105px auto;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.footerin .ft_bottom .add{
+    padding-bottom: 20px;
+}
+.footerin .ft_bottom .ft_p{
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    padding-top: 20px;
+}
+.footerin .ft_bottom .ft_p span{
+    text-decoration: underline;
+    font-weight: 500;
+}
+.footerin .ft_bottom .ft_p span:hover{
+    color: #fff;
+}
+.copy{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    padding-bottom: 30px;
+}
+/* 카피쓴거 패딩 물어보기 */

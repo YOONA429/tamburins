@@ -1,0 +1,253 @@
+#wrap{
+    margin-top: 300px;
+}
+#wrap .fixed{
+    width: 100%;
+    position:fixed;
+    top: 0; left: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+#header{
+    border-bottom: 1px solid #000;
+}
+.headerin{
+    /* background-color: red; */
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: violet; */
+    padding-bottom: 100px;
+
+}
+.headerin .logo{
+    text-align: center;
+    padding-top: 60px;
+}
+.headerin .logo img{
+    width: 267px;}
+
+.util{
+    position: absolute;
+    top: 146px; right: 0;
+}
+.util li{
+    /* display: inline-block; */
+    float: left;
+    margin-left: 20px; 
+}
+.util li a{
+    background: url(../images/util_01.png) no-repeat center 0;
+    padding-top: 35px;
+    /* margin: 20px; */
+}
+.util li:nth-child(2) a{
+    background-image: url(../images/util_02.png);
+}
+.util li a:hover{
+    color: #5c886f;
+    font-weight: 400;
+}
+
+nav{border-bottom: 1px solid #000;}
+.gnb{
+    width: 1020px;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 auto;
+}
+.gnb>li{
+    width: 204px;
+    float: left;
+    text-align: center;
+    line-height: 39px;
+    position: relative;
+}
+.gnb>li>a{}
+.gnb>li::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px;
+    background-color: #000;
+    /* display: block; */
+    /* position: absolute; */
+}
+.gnb>li:first-child::before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px;
+    background-color: #000;
+}
+
+.gnb>li:hover>a{
+    width: 204px;
+    height: 39px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+}
+
+.gnb>li .sub{
+    position: absolute;
+    top: 40px; left: 50%; transform: translateX(-50%);
+    width: 204px;
+    height: 0; overflow: hidden;
+    background-color: #5c886f;
+    transition: all 0.4s;
+    font-weight: 200;
+}
+
+.gnb>li .sub li{
+    line-height: 2.5em;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.gnb>li:hover .sub{
+    padding-top: 15px;
+    height: 170px
+    /* opacity: 1; */
+}
+.gnb>li .sub a:hover{
+    text-decoration: underline;
+}
+.container{
+    width: 1020px;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: yellow; */
+}
+.container .tit{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+.container .tit:hover{
+    color: #5c886f;
+}
+.container .txt{
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.5em;
+}
+.container .price{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2em;
+}
+.container .price:hover{
+    color: #777;
+}
+.container .img:hover{
+    opacity: 0.7;
+}
+/* container cont1 */
+.cont1>div{
+    float: left;
+    margin-right: 48px;
+    padding-bottom: 80px;
+}
+.cont1>div:last-child{
+    margin-right: 0;
+}
+.cont1>div>ul li{
+    margin-left: 10px;
+}
+
+/* container cont2 */
+.cont2>div{
+    float: left;
+    margin-right: 48px;
+    padding-bottom: 80px;
+}
+.cont2>div:last-child{
+    margin-right: 0;
+}
+.cont2>div>ul li{
+    margin-left: 10px;}
+
+
+/* container cont3 */
+.cont3>div{
+    float: left;
+    margin-right: 48px;
+    padding-bottom: 100px;
+}
+.cont3>div:last-child{
+    margin-right: 0;
+}
+.cont3>div>ul li{
+    margin-left: 10px;}
+
+
+#footer{
+    height: 234px;
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.footerin{
+    width: 1020px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+.ft_menu{
+    position: absolute;
+    margin: 25px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footerin .ft_menu li{
+    float: left;
+    text-align: center;
+    padding: 0 60px;
+}        /* 위아래부분 css 확인해달라고 하기 */
+.footerin .ft_menu a{
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 0 15px;
+    
+}
+.footerin .ft_menu li:hover{
+    color: #5c886f;
+}
+.footerin .ft_bottom{
+    position: absolute;
+    float: left;
+    margin: 105px auto;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.footerin .ft_bottom .add{
+    padding-bottom: 20px;
+}
+.footerin .ft_bottom .ft_p{
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    padding-top: 20px;
+}
+.footerin .ft_bottom .ft_p span{
+    text-decoration: underline;
+    font-weight: 500;
+}
+.footerin .ft_bottom .ft_p span:hover{
+    color: #fff;
+}
+.copy{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    padding-bottom: 30px;
+}
+/* 카피쓴거 패딩 물어보기 */
